@@ -1,0 +1,388 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(img/front.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mainlogo{
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+.mainlogo img{
+    height: 450px;
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transition: 0.6s;
+    animation: main 1s ease-in-out;
+}
+.mainlogo img:hover{
+    /* transform: skewy(-2deg); */
+    height: 440px;
+    width: 440px;
+}
+@keyframes main{
+    from{opacity: 0;transform: rotate(0deg);height: 250px;width: 250px;
+}
+    to{opacity: 1;transform: rotate(720deg);height: 450px;width: 450px;}
+}
+#logo{
+    margin-top: 20px;
+    float: left;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    animation: logo 5s ease-in-out infinite alternate;
+}
+@keyframes logo{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+#logoname{
+   margin-top: 20px;
+   color: white;
+   top: 25px;
+   width: 200px;
+   float: left;
+   position: relative;
+}
+nav{
+    display: block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul  li{
+    padding: 20px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+nav li a:hover{
+    border-top: 1px solid white;
+    border-bottom: 2px solid white;
+    animation: link 5s linear;
+}
+@keyframes link{
+    0%{width: 0px;}
+    100%{width: 100px;}
+}
+
+
+/* Social media */
+.socialmedia{
+    display: block;
+    float: left;
+    position: fixed;
+    margin-top: 200px;
+    font-size: 30px;
+}
+.socialmedia span{
+    font-size: 16px;
+    color: yellowgreen;
+    margin-left: 5px;
+}
+.socialmedia i{
+    padding: 10px;
+    color: yellowgreen;
+}
+.socialmedia i:hover{
+    color: yellow;
+}
+.section {
+    display: block;
+    text-align: center;
+    /* padding: 200px 50px; */
+    color:white
+}
+.sect{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 100px 20px 100px 20px;
+    line-height: 50px;
+    background-color: rgb(255, 255, 255, 0.2);
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(255, 255, 255, 0.4);
+}
+#about{
+    margin-bottom: 150px;
+}
+#about:hover{
+    font-size: 20px;
+    transition: 0.4s;
+    font-size: 25px;
+}
+#aboutus{
+    padding-top: 100px;
+    margin-bottom: 300px;
+}
+
+/* SERVICE */
+#services{
+    max-width: 70%;
+    height: 100px;
+    transition: 1s;
+    padding-top: 100px;
+    margin-top: 50px;
+}
+#item{
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s linear, width 0.5s linear 0.1s;
+}
+#services:hover{
+    height: 300px;
+}
+#services:hover #service{
+    transform: translateY(-30%);
+}
+#services:hover #item{
+    opacity: 1;
+    width: 100%;
+}
+ #i1, #i2, #i3, #i4{
+    margin-left: -140%;
+    opacity:0;
+    font-weight: bolder;
+    font-size: 24px;
+ }
+#i1{
+    transition: 0.3s ease-out 0.1s;
+}
+#i2{
+    transition: 0.3s ease-out 0.2s;
+}
+#i3{
+    transition: 0.3s ease-out 0.3s;
+}
+#i4{
+    transition: 0.3s ease-out 0.4s;
+}
+#services:hover #i1, #services:hover #i2, #services:hover #i3, #services:hover #i4{
+    margin-left: 0%;
+    opacity: 1;
+}
+
+#gallery{
+    width: 400px;
+    height: 400px;
+    padding: 0 0 20px 0;
+    margin-top: 70px;
+}
+.works i #back{
+    float: left;
+}
+.works i #forward{
+    float: right;
+}
+.works img{
+    margin-top: 8px;
+    height: 350px;
+    width: 350px;
+}
+
+#footer{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.6);
+    /* padding: 20px; */
+    color: white; 
+    margin-top: 0;
+}
+#footer h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+#footer div{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 250px;
+    width: 90%;
+    background-color: rgb(35, 79, 129);
+    box-shadow: 0 0 10px 0px black;
+}
+
+#footer i{
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+#footer span{
+    margin-left: 30px;
+    font-size: 18px;
+}
+#footer i:hover{
+    background-color: white;
+    color: rgba(2, 2, 119, 0.89);
+    box-shadow: 0px 0px;
+    max-width: 320px;
+}
+
+#response{
+    display: none;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* Rsponsive */
+
+@media only screen and (max-width:500px){
+    body{
+        background-size: 300px;
+        background-repeat: none;
+        right: 0;
+    }
+    
+    .mainlogo img{
+        height: 270px;
+        width: 270px;
+        z-index: 1;
+    }
+    
+    #logo{
+        left: 10px;
+        height: 30px;
+        width: 30px;
+    }
+    #logoname{
+       top: 10px;
+       left: 12px;
+       font-size: 13px;
+    }
+   
+
+    #response{
+        z-index: 1;
+        display: block;
+        right: 0;
+        margin: 20px 30px 0px 0px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+    }
+    nav{
+        opacity: 0;
+        transition: 0.3s linear;
+        position: absolute;
+        display: block;
+        right: 0;
+        z-index: 0;
+    }
+    nav ul{
+        z-index: 2;
+        display: block;
+        height: auto;
+        background-color: rgb(6, 60, 131, 0.7);
+        transition: 0.3s;
+        right: 0;
+    } 
+    nav ul  li{
+        border-bottom: 1px solid white;
+    }
+    nav li a{
+        color: white;
+        text-decoration: none;
+        transition: 0.1s linear;
+    }
+    nav li a:hover{
+        border: none;
+        color: wheat;
+    }
+    /* social media */
+
+    .socialmedia{
+        position: fixed;
+        margin-top: 350px;
+        font-size: 18px;
+        z-index: 1;
+    }
+
+    .socialmedia span{
+        font-size: 7px;
+    }
+
+    /* sect */
+    .sect{
+        margin-left: 30px;
+        right: 0;
+        margin-right: 0;
+    }
+    #about h2{
+        margin-bottom: 20px;
+    }
+    #about{
+
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #gallery{
+        margin-top: 50px;
+        padding: 10px 10px 0px 10px;
+        width: 300px;
+    }
+    .works img{
+        margin-top: 8px;
+        margin-left: 0;
+        height: 230px;
+        width: 230px;
+        padding: 0;
+    }
+    .works i #back{
+        float: left;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .works i #forward{
+        float: right;
+        font-size: 30px;
+    }
+    #footer{
+        width: 85%;
+        margin-left: 20px;
+        height: 250px;
+        margin-bottom: 60px;
+        margin-right: 0;
+        right: 0;
+    }
+    #footer i{
+        font-size: 20px;
+        padding: 10px;
+        border: 1px solid white;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 200px;
+        display: block;
+        border-radius: 10px;
+        transition: 0.3s linear;
+    }
+    #footer span{
+        font-size: 12px;
+    }
+
+}

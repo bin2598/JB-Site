@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JB Creatz</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    </head>
+
+    <body>
+
+        <div class="mainnav">
+        
+        <div>
+        <img src="img/white.png" id="logo">
+        <div id="logoname">JB Creatz</div>
+        </div>
+
+        <i id="response" class="fas fa-ellipsis-h"></i>
+
+        
+
+        <nav id="navbar">
+            <ul id="ul">
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="works.html">Our Works</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+        </div>
+
+        <div class="socialmedia">
+        <span>Follow Us</span><br>
+        <a href="http://www.instagram.com/jb__creatz/"><i title="Instagram/jb__creatz" class="fab fa-instagram"></i></a><br>
+        <a><i class="fab fa-facebook"></i></a><br>
+        <a><i class="fab fa-twitter-square"></i></a><br>
+        <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a><br>
+        </div>
+
+
+        <div class="mainlogo">
+            <img src="img/white.png">
+        </div>
+
+        <p style="text-align: center; font-family: cursive;color:white;opacity: 0.7;font-size: 20px;transform: translate(-5%);">Create Creative Creeds</p>
+
+<br><br>
+        <div class="section" id="aboutus">
+            <section class="sect" id="about">
+                <h2><u>What we are?</u></h2>
+                <p>
+                    We are leading foundation of freelancers located at Thrissur. We provide <br
+                    >all type of designing works as per the requirements of customers.<br>
+                    We have higly talented team for satisfying the needs of our customers.
+                </p>
+            </section><br>
+            <section class="sect" id="services">
+                <h2 id="service">Our Services</h2>
+                <p id="item">
+                    <span id="i1">Logo Designing</span><br>
+                    <span id="i2">Digital Advertising</span><br>
+                    <span id="i2">Vector Painting</span><br>
+                    <span id="i3">Buisiness Card Designing</span><br>
+                    <span id="i4">Brochure</span>
+                </p>
+            </section><br>
+
+            <section class="sect" id="gallery">
+                <a href="works.html" style="color: white;"><h2>Gallery</h2></a>
+                    
+                    <div class="works">
+                        
+                        <img src="img/1.jpg" id="img">
+                    <div>
+                        <i class="fas fa-arrow-alt-circle-left" id="back"></i>
+                        <i class="fas fa-arrow-alt-circle-right" id="forward"></i>
+                    </div>
+        
+                        <script>
+                            im = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+                            img = document.getElementById('img')
+                            i = document.getElementById('forward')
+                            c = 0
+                            i.onclick = function(){
+                                // console.log(img[c])
+                                if( c < 14 ){
+                                c = c+1
+                                }
+                                else{
+                                    c = 0
+                                }
+                                img.src = "img/" + im[c] + ".jpg"
+                            }
+                            i1 = document.getElementById('back')
+                            // c = 8
+                            i1.onclick = function(){
+                                
+                                console.log(im[c])
+                                if(c > 0){
+                                c = c-1
+                                }
+                                else{
+                                    c = 14
+                                }
+                                img.src = "img/" + im[c] + ".jpg"
+                            }
+                        </script>
+                    </div>
+
+            </section>
+        </div>
+
+        <div id="footer">
+            <div id="contact">
+                <br>
+                <h2>Contact Us</h2>
+
+                <i class="fas fa-phone"><span>8330825264</span></i>
+                <i class="far fa-envelope"><span>jubinbabyanthony@gmail.com</i></span>
+                <i class="fas fa-map-marker-alt"><span>Thrissur,Kerala</i></span>
+
+
+            </div>
+        </div>
+
+        <script>
+            if(window.innerWidth <= 500){
+            r = document.getElementById('response')
+            n = document.getElementById('navbar')
+            n.style.width = "0px"
+            ul = document.getElementById("ul").style.width="0px"
+            r.onclick = function(){
+                if (n.style.width == "0px"){
+                    console.log("200")
+                    n.style.width = "300px"
+                    n.style.opacity = "1"
+                    r.style.color = "wheat"
+                    ul = document.getElementById("ul").style.width="330px"
+                    ul = document.getElementById("ul").style.opacity="1"
+                }
+                else{
+                    n.style.width = "0px"
+                    n.style.opacity = "0"
+                    r.style.color = "white"
+                    ul = document.getElementById("ul").style.width="0px"
+                    ul = document.getElementById("ul").style.opacity="0"
+                }
+            }
+            }
+        </script>
+    </body>
+</html>
