@@ -351,6 +351,7 @@ nav a:hover{
         text-align: justify;
         font-size: 16px;
         line-height: 20px;
+        width 100%;
     }
     #services{
         max-width: 100%;
