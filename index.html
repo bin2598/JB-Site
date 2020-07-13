@@ -5,6 +5,11 @@
         <title>JB Creatz</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
     </head>
 
     <body>
@@ -22,10 +27,10 @@
 
         <nav id="navbar">
             <ul id="ul">
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="works.html">Our Works</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <a href="#aboutus"><li>About Us</li></a>
+                <a href="#services"><li>Our Services</li></a>
+                <a href="works.html"><li>Our Works</li></a>
+                <a href="#contact"><li>Contact Us</li></a>
             </ul>
         </nav>
 
@@ -50,10 +55,10 @@
 <br><br>
         <div class="section" id="aboutus">
             <section class="sect" id="about">
-                <h2><u>What we are?</u></h2>
+                <h2 style="text-align: center;"><u>What we are?</u></h2>
                 <p>
-                    We are leading foundation of freelancers located at Thrissur. We provide <br
-                    >all type of designing works as per the requirements of customers.<br>
+                    We are leading foundation of freelancers located at Thrissur. We provide
+                    all type of designing works as per the requirements of customers.
                     We have higly talented team for satisfying the needs of our customers.
                 </p>
             </section><br>
@@ -72,8 +77,31 @@
                 <a href="works.html" style="color: white;"><h2>Gallery</h2></a>
                     
                     <div class="works">
+
+                        <div class="w3-content w3-section" style="max-width:500px">
+                            <img class="mySlides" src="img/1.jpg" style="width:100%">
+                            <img class="mySlides" src="img/2.jpg" style="width:100%">
+                            <img class="mySlides" src="img/3.jpg" style="width:100%">
+                          </div>
+                          
+                          <script>
+                          var myIndex = 0;
+                          carousel();
+                          
+                          function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                              x[i].style.display = "none";  
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) {myIndex = 1}    
+                            x[myIndex-1].style.display = "block";  
+                            setTimeout(carousel, 2000); // Change image every 2 seconds
+                          }
+                          </script>
                         
-                        <img src="img/1.jpg" id="img">
+                        <!-- <img src="img/1.jpg" id="img">
                     <div>
                         <i class="fas fa-arrow-alt-circle-left" id="back"></i>
                         <i class="fas fa-arrow-alt-circle-right" id="forward"></i>
@@ -107,7 +135,7 @@
                                 }
                                 img.src = "img/" + im[c] + ".jpg"
                             }
-                        </script>
+                        </script> -->
                     </div>
 
             </section>
@@ -119,7 +147,7 @@
                 <h2>Contact Us</h2>
 
                 <i class="fas fa-phone"><span>8330825264</span></i>
-                <i class="far fa-envelope"><span>jubinbabyanthony@gmail.com</i></span>
+                <i class="far fa-envelope"><span id="email">jubinbabyanthony@gmail.com</i></span>
                 <i class="fas fa-map-marker-alt"><span>Thrissur,Kerala</i></span>
 
 
@@ -127,7 +155,7 @@
         </div>
 
         <script>
-            if(window.innerWidth <= 500){
+            if(window.innerWidth <= 700){
             r = document.getElementById('response')
             n = document.getElementById('navbar')
             n.style.width = "0px"
