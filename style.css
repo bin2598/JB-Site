@@ -375,13 +375,13 @@ nav a:hover{
     #gallery{
         margin-top: 50px;
         padding: 10px 10px 0px 10px;
-        max-width: 300px;
+        max-width: 100%px;
     }
     .works img{
         margin-top: 8px;
         margin-left: 0;
-        height: 230px;
-        width: 230px;
+        height: 300px;
+        width: 100%;
         padding: 0;
     }
     .works i #back{
