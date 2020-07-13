@@ -245,6 +245,18 @@ nav a:hover{
     box-shadow: 0px 0px;
     max-width: 320px;
 }
+#bottom{
+    height: 200px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+#bottom span{color: rgb(255, 255, 255);}
+#bottom a{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 50px;
+}
 
 #response{
     display: none;
@@ -307,7 +319,7 @@ nav a:hover{
         background-color: rgb(31, 63, 104);
         transition: 0.3s;
         right: 0;
-        height: 100vh;
+        height: 400px;
     } 
     nav ul  li{
         border-bottom: 1px solid white;
@@ -351,7 +363,7 @@ nav a:hover{
         text-align: justify;
         font-size: 16px;
         line-height: 20px;
-        width 100%;
+        max-width 100%;
     }
     #services{
         max-width: 100%;
@@ -360,7 +372,7 @@ nav a:hover{
     #gallery{
         margin-top: 50px;
         padding: 10px 10px 0px 10px;
-        width: 300px;
+        max-width: 300px;
     }
     .works img{
         margin-top: 8px;
@@ -404,6 +416,10 @@ nav a:hover{
     #footer span #email{
         font-size: 10px;
         line-height: 20px;
+    }
+    #bottom a{
+        padding: 10px;
+        font-size: 30px;
     }
 
 }
